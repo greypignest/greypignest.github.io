@@ -1,69 +1,66 @@
-* {margin:0;padding:0;border:0;background:transparent;outline:none;text-decoration:none;outline:none;font-family:inherit;box-sizing:border-box;}
-ol, ul, li {list-style:none;display:block;}
-table {border-collapse: collapse;border-spacing:0;}
-a img {border: none;}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
 
-button,
-a{cursor: pointer; color: inherit;}
+  background: transparent;
 
-textarea{resize: none;}
-
-button,
-input,
-textarea,
-select{appearance: none !important; -webkit-appearance: none !important; border-radius: 0;}
-
-
-body{
-    background-color: #184a45;
-
-    font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
+  
+  text-decoration: none;
 }
 
-.container {
-    width: 100%;
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-
+ol, ul, li {
+  list-style:none;
+  display:block;
 }
 
-.box {
-    width: 100%;
-    max-width: 600px;
-    min-height: 200px;
-    padding: 60px 10px;
-    margin: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-    text-align: center;
-
-    background-color: #f49880;
-
-    border-radius: 2px;
-
-    box-shadow: 0 0 100px #000;
+table {
+  border-collapse:collapse;
+  border-spacing:0
 }
 
-.box p{
-    color: #184a45;
+a img {
+  border: none
 }
 
-.box p:nth-child(1) {
-    padding-bottom: 10px;
-
-    font-size: 20px;
-    font-weight: 300;
+button, a {
+  cursor: pointer;
+  color: inherit
 }
 
-.box p:nth-child(2) {
-    font-size: 60px;
-    line-height: 60px;
-    text-transform: uppercase;
-    font-weight: 800;
+textarea {
+  resize: none
+}
+
+button, input, textarea, select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.gomb1 {
+  background-color: #17D7A0;
+}
+
+.gomb2 {
+  background-color: #32C1CD;
+}
+
+.gomb3 {
+  background-color: #6166B3;
 }
