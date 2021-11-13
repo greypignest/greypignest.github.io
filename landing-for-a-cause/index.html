@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e2d04b1405.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Magnificat</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Rólunk</a></li>
+
+                <li><a href="#mission">Missziónk</a></li>
+
+                <li id="donation"><a href="#payment">Támogatás</a></li>
+
+                <li><a href="#social">Kapcsolat</a></li>
+            </ul>
+        </nav>
+
+        <a href="#payment"><i class="fas fa-chevron-down"></i></a>
+
+        <div class="topPhoto">
+            <img src="/pictures/Jubileum_osszeallitas_croped.jpg" alt="group photo" class="topPhoto">
+        </div>
+
+        <div class="logo">  
+            <img src="pictures/magnif-logo.png" alt="desktop logo" class="logo">
+        </div>
+    </header>
+
+    <section id="payment">
+        <h1 id="payment-title"><span>TÁMOGATÁS</span></h1>
+
+        <div id="payment-textbox">
+            <p id="payment-text">A kórus működéséhez szükséges eszközöket a Magnificat Kórus Alapítványon keresztül biztosítjuk. Támogatásával Ön is hozzájárul a kórus fennmaradásához és segíti mindennapi munkánkat.</p>
+            
+            <div class="radioBtn">
+                <input type="radio" name="amount" id="amount1000">
+                <label for="amount1000">1000 Ft</label>
+                <input type="radio" name="amount" id="amount2000">
+                <label for="amount2000">2000 Ft</label>
+                <input type="radio" name="amount" id="amount5000">
+                <label for="amount5000">5000 Ft</label>
+                <input type="radio" name="amount" id="amount10000">
+                <label for="amount10000">10&#160;000 Ft</label>
+            </div>
+            
+            <button class="submit">Fizetés</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 id="about-title"><span>RÓLUNK</span></h1>
+
+        <figure class="left">
+            <img src="pictures/sing.jpg" alt="sing">
+        </figure>
+
+        <div id="about-textbox">
+            <p class="about-text">A többszörösen kitüntetett Magnificat Leánykar 1990-es megalakulása óta szolgálja szívvel-lélekkel zeneszerető közönségét.</p>
+            <p class="about-text">Több kultúrtörténeti korszakon átívelő világi és egyházi repertoárunkkal számos zenei rendezvényen találkozhatott.</p>
+        </div>
+        
+        <a href="#payment" class="goto-payment-about">Tovább a támogatáshoz <i class="fas fa-chevron-up"></i></a>
+    </section>
+
+    <section id="mission">
+        <h1 id="mission-title"><span>MISSZIÓNK</span></h1>
+
+        <figure class="right">
+            <img src="pictures/karvezető.jpg" alt="dirigent">
+        </figure>
+
+        <div id="mission-textbox">
+            <p>A zene szeretete, a kodályi hagyományok ápolása és a kórusmuzsika magas szintű művelése a kezdetektől szenvedélyünk.</p>
+            <a href="#payment" class="goto-payment-mission">Tovább a támogatáshoz <i class="fas fa-chevron-up"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div id="social">
+            <a href="https://www.facebook.com/magnificat.budapest"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCAdqXhynRkmvhd15tlz4IPw"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="container">
+
+            <div id="left">
+                <p>Magnificat Kórus Alapítvány</p>
+                <p>1132 Budapest, Váci út 34.</p>
+                <p>Adószám: 18089752-1-41</p>
+                <p>Bankszámlaszám: 11645007-04593500-45000005</p>
+                <p>Nyilvántartási szám: 01-01-0007076</p>
+            </div>
+
+            <div id="right">
+                <label for="subscribeEmail">Iratkozzon fel hírlevelünkre!</label><br>
+                <input type="email" name="subscribe" id="subscribeEmail" placeholder="richard.atom@codecool.com">
+                <button class="submit-subscribe">Feliratkozás</button>
+            </div>
+
+        </div>
+
+        <div id="footer-bottom">
+                <a href="">Impresszum</a> | <a href="">Általános szerződési feltételek</a> | <a href="">Adatkezelési tájékoztató</a>
+        </div>
+    </footer>
+</body>
+</html>
