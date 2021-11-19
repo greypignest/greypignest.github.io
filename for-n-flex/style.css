@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+  
+    background: transparent;
+  
+    font-family: inherit;
+    
+    text-decoration: none;
+  }
+  
+  ol, ul, li {
+    list-style:none;
+    display:block;
+  }
+  
+  table {
+    border-collapse:collapse;
+    border-spacing:0
+  }
+  
+  a img {
+    border: none
+  }
+  
+  button, a {
+    cursor: pointer;
+    color: inherit
+  }
+  
+  textarea {
+    resize: none
+  }
+  
+  button, input, textarea, select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 0
+  }
+
+  #root {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /*mindkettőt engelyre hat, de ez dönti el, h melyik primary*/
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+
+  }
+
+  /*flex: mind a két tengelyen egyszerre működő dolog: primary(row) és secondary(column-horizintális) axis
+
+
+  feladatok:
+  JS -- mai feladatba, külön függvény amelyet template literalba hívunk meg
+  amountban megadott szám számjegyeinek hossza az annyi ameddig megy a ciklus, nullákat írjunk elé, de akkor is ha pl a szám 20.000 működjön
+  vizsgáljuk meg, h milyen hosszú az adott szám és miközben elszámolunk a számtól nulláig
+  CSS -- kártyákat formázzuk meg, szín border stb legyen ízléses, googlefont
+
+
+  row a vízszintes
+column a függőleges
+primary axis by default row aka. vízszintes aka. horizontális 
+Richárd Atom14:53
+secondary axis by default column aka. függőleges aka. vertikális
+DE!
+akkor megfordul és 
+column aka. függőleges aka. vertikális lesz a primary
+és a
+Richárd Atom14:54
+row aka. vízszintes aka. horizontális lesz a secondary
+
+
+
+
+primary axis by default row (alapértelmezetten: flex-direction: row) aka. vízszintes aka. horizontális  aka x tengely
+secondary axis by default column aka. függőleges aka. vertikális aka y tengely
+viszont ha azt mondjuk, hogy flex-direction: column; akkor megfordul és 
+column aka. függőleges aka. vertikális aka. y tengely lesz a primary
+és a row aka. vízszintes aka. horizontális aka. x tengely lesz a secondary
+
+NINCSENEK TENGELYHEZ KÖTÖTT TULAJDONSÁGOK, A PRIMARY AXISHOZ VANNAK KÖTVE, DE EZ VÁLTOZTATHATÓ A FLEX-DIRECTIONNEL
+
+CSAK A KÖZVETLEN CHILDOKRA VONATKOZIK A FLEX ÉS A GRID
+
+FLEXNK VANNAK A CHILDOKRA ÉS VANNAK A PARENTEKRE KERÜLÖ TULAJDONSÁGAI IS*/
