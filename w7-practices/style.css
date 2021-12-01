@@ -1,0 +1,82 @@
+body, body *, body *::before, body *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+
+    background: transparent;
+
+    font-family: inherit;
+  
+    text-decoration: none;
+}
+
+ol, ul, li {
+    list-style: none;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a img {
+    border: none
+}
+
+button, a {
+    cursor: pointer;
+    color: inherit
+}
+
+textarea {
+    resize: none
+}
+
+button, input, textarea, select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 0
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-80%);
+    background: #d0aebc;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input {
+    border: #6e819e 2px solid;
+    padding: 5px;
+}
+
+label {
+    display: block;
+}
+
+select {
+    border: #6e819e;
+    padding: 5px;
+}
+
+button {
+    background: #6e819e;
+}
+
+/* form > * {
+    
+} */
